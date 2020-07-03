@@ -1,0 +1,9 @@
+  
+// ignore IntelliJ project files
+*.iml
+/.idea
+
+target
+
+//mac specific
+.DS_Store
