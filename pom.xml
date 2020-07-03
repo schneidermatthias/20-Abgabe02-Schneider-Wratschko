@@ -6,38 +6,42 @@
 
   <groupId>at.fhj.iit</groupId>
   <artifactId>Queue</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
 
   <name>Queue</name>
-  <url>https://github.com/michaelulm/software-configuration-management/tree/master/test-automation/junit5/Queue</url>
+  <description>Queue project for the second assignment of the "Software Configuration Management" course </description>
+  <url>https://github.com/schneidermatthias/20-Abgabe02-Schneider-Wratschko</url>
 
   <developers>
     <developer>
-      <id>michaelulm</id>
-      <name>Michael Ulm</name>
-      <email>michael.ulm@fh-joanneum.at</email>
-      <url>https://www.michael-ulm.at</url>
+      <id>schneidermatthias</id>
+      <name>Matthias Schneider</name>
+      <email>matthias.schneider@edu.campus02.at</email>
+      <url>https://github.com/schneidermatthias</url>
       <organization>FH JOANNEUM GmbH</organization>
       <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
       <roles>
-        <role>Lecturer</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
+        <picUrl>https://avatars.githubusercontent.com/schneidermatthias</picUrl>
       </properties>
     </developer>
+           
     <developer>
-      <id>Rigbin</id>
-      <name>Harald Schwab</name>
-      <email>harald.schwab2@fh-joanneum.at</email>
-      <url>https://github.com/Rigbin</url>
+      <id>vinziw</id>
+      <name>Vinzenz Wratschko</name>
+      <email>vinzenz.wratschko@edu.campus02.at</email>
+      <url>https://github.com/vinziw</url>
       <organization>FH JOANNEUM GmbH</organization>
       <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
       <roles>
-        <role>Researcher</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
+      <properties>
+      <picUrl>https://avatars.githubusercontent.com/vinziw</picUrl>
       <properties/>
     </developer>
   </developers>
