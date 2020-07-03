@@ -17,7 +17,7 @@ These following points will be handled during this assignment:
 
 - [x] General description in Readme
 - [x] Import Template to Repo
-- [ ] Edit pom.xml meta infos
+- [x] Edit pom.xml meta infos
 - [ ] Fix implementation issues in template 
 - [ ] Add queue implementation with generics
 - [ ] Test string implementation
