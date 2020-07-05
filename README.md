@@ -19,7 +19,7 @@ These following points will be handled during this assignment:
 - [x] Import Template to Repo
 - [x] Edit pom.xml meta infos
 - [x] Fix implementation issues in template 
-- [ ] Add queue implementation with generics
+- [x] Add queue implementation with generics
 - [ ] Test string implementation
 - [ ] Test generics implementation
 - [ ] Create site documentation using Maven
