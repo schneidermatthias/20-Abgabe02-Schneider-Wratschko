@@ -11,27 +11,23 @@ import java.util.NoSuchElementException;
 
 public class StringQueue implements IQueue<String> {
 
-  /**
-   *
-   */
+
   private List<String> elements = new ArrayList<String>();
-  /**
-   *
-   */
   private int maxSize; //bug: maxSize was already assigned
 
-  /**
-   *
-   * @param maxSize
+  /***
+   * constructor
+   * @param maxSize describes maximum size of queue
    */
   public StringQueue(int maxSize) { //typo: maxsize to maxSize
     this.maxSize = maxSize; //bug maxSize to this.maxSize
   }
 
   /**
-   *
-   * @param obj
-   * @return
+   * Adds the element obj to the queue.
+   * If the addition is successful, the method returns true else false.
+   * @param obj String, will be added to queue
+   * @return boolean, true if list is not full, flase if full
    */
   @Override
   public boolean offer(String obj) {
@@ -44,9 +40,10 @@ public class StringQueue implements IQueue<String> {
   }
 
   /**
-   *
-   * @return
-   */
+   * Returns the head (first) element and also deletes it. That is, we cannot get it again.
+   * If no element exists (when queue is empty), the method returns null.
+   * @return String element
+   * */
   @Override
   public String poll() {
     String element = peek();
@@ -59,8 +56,9 @@ public class StringQueue implements IQueue<String> {
   }
 
   /**
-   *
-   * @return
+   * It also returns and deletes the head element like poll(), but with a small difference.
+   * This method throws NoSuchElementException if the queue is empty.
+   * @return String element
    */
   @Override
   public String remove() {
@@ -73,8 +71,9 @@ public class StringQueue implements IQueue<String> {
   }
 
   /**
-   *
-   * @return
+   * Returns the head element but it does not delete it. That is, we can get it again.
+   * Returns null when the queue is empty.
+   * @return String element
    */
   @Override
   public String peek() {
@@ -88,8 +87,9 @@ public class StringQueue implements IQueue<String> {
   }
 
   /**
-   *
-   * @return
+   * It works similar to peek() but with a small difference (returns but does not delete the element).
+   * It throws NoSuchElementException when the queue is empty.
+   * @return String element
    */
   @Override
   public String element() {

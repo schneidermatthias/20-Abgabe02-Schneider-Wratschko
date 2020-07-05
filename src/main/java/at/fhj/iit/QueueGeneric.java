@@ -6,34 +6,28 @@ import java.util.NoSuchElementException;
 
 public class QueueGeneric<T> implements IQueue<T>{
 
-    /***
-     *
-     */
-    private int maxSize;
 
-    /**
-     *
-     */
+    private int maxSize;
     private List<T> list = new ArrayList<>();
 
     /***
-     *
-     * @param maxSize
+     * constructor
+     * @param maxSize describes maximum size of queue
      */
     public QueueGeneric(int maxSize) {
         this.maxSize = maxSize;
     }
 
     /**
-     *
-     * @return
+     * getter of maxSize of queue
+     * @return int maxSize of Queue
      */
     public int getMaxSize() {
         return maxSize;
     }
 
     /**
-     *
+     * method for assigning new maxSize to Queue
      * @param maxSize
      */
     public void setMaxSize(int maxSize) {
@@ -41,9 +35,10 @@ public class QueueGeneric<T> implements IQueue<T>{
     }
 
     /**
-     *
-     * @param obj
-     * @return
+     * Adds the element obj to the queue.
+     * If the addition is successful, the method returns true else false.
+     * @param obj Generic, will be added to queue
+     * @return boolean, true if list is not full, flase if full
      */
     @Override
     public boolean offer(T obj) {
@@ -56,9 +51,10 @@ public class QueueGeneric<T> implements IQueue<T>{
     }
 
     /**
-     *
-     * @return
-     */
+     * Returns the head (first) element and also deletes it. That is, we cannot get it again.
+     * If no element exists (when queue is empty), the method returns null.
+     * @return Generic element
+     * */
     @Override
     public T poll() {
         T element = peek();
@@ -71,8 +67,9 @@ public class QueueGeneric<T> implements IQueue<T>{
     }
 
     /**
-     *
-     * @return
+     * It also returns and deletes the head element like poll(), but with a small difference.
+     * This method throws NoSuchElementException if the queue is empty.
+     * @return Generic element
      */
     @Override
     public T remove() {
@@ -85,8 +82,9 @@ public class QueueGeneric<T> implements IQueue<T>{
     }
 
     /**
-     *
-     * @return
+     * Returns the head element but it does not delete it. That is, we can get it again.
+     * Returns null when the queue is empty.
+     * @return Generic element
      */
     @Override
     public T peek() {
@@ -98,8 +96,9 @@ public class QueueGeneric<T> implements IQueue<T>{
     }
 
     /**
-     *
-     * @return
+     * It works similar to peek() but with a small difference (returns but does not delete the element).
+     * It throws NoSuchElementException when the queue is empty.
+     * @return Generic element
      */
     @Override
     public T element() {

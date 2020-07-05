@@ -20,8 +20,8 @@ These following points will be handled during this assignment:
 - [x] Edit pom.xml meta infos
 - [x] Fix implementation issues in template 
 - [x] Add queue implementation with generics
-- [ ] Test string implementation
-- [ ] Test generics implementation
+- [x] Test string implementation
+- [x] Test generics implementation
 - [ ] Create site documentation using Maven
 
 
