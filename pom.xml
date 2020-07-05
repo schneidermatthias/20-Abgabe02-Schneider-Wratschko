@@ -41,8 +41,8 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-      <picUrl>https://avatars.githubusercontent.com/vinziw</picUrl>
-      <properties/>
+        <picUrl>https://avatars.githubusercontent.com/vinziw</picUrl>
+      </properties>
     </developer>
   </developers>
 
