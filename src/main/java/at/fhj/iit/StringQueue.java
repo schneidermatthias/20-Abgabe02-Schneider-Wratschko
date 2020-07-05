@@ -9,15 +9,30 @@ import java.util.NoSuchElementException;
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 // TODO: find typos, bugs, etc and fix them
 
-public class StringQueue implements IQueue {
+public class StringQueue implements IQueue<String> {
 
+  /**
+   *
+   */
   private List<String> elements = new ArrayList<String>();
+  /**
+   *
+   */
   private int maxSize; //bug: maxSize was already assigned
 
+  /**
+   *
+   * @param maxSize
+   */
   public StringQueue(int maxSize) { //typo: maxsize to maxSize
     this.maxSize = maxSize; //bug maxSize to this.maxSize
   }
 
+  /**
+   *
+   * @param obj
+   * @return
+   */
   @Override
   public boolean offer(String obj) {
     if (elements.size() != maxSize)
@@ -28,6 +43,10 @@ public class StringQueue implements IQueue {
     return true;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public String poll() {
     String element = peek();
@@ -39,6 +58,10 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public String remove() {
     String element = poll();
@@ -49,6 +72,10 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public String peek() {
     String element;
@@ -60,6 +87,10 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public String element() {
     String element = peek();
